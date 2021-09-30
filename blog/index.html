@@ -24,9 +24,14 @@ pagination:
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
+        <div class="profile float-right">
+          <img class="img-fluid z-depth-1 rounded" src="{{ post.image | prepend: '/assets/img/' | relative_url }}">
+        </div>
+        <div class="clearfix">
         <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
         <p>{{ post.description }}</p>
+      </div>
       </li>
     {% endfor %}
   </ul>

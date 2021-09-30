@@ -59,8 +59,8 @@ max_width: 800px
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Aditi's Blog  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Aditi's Journey/Adventures  # your blog must have a name for it to show up in the nav bar
+blog_description: A nerd's journey through life
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -79,6 +79,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  
 
 
 # -----------------------------------------------------------------------------
